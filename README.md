@@ -14,6 +14,13 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 #### Heading 4
 ##### Heading 5
 ```
+this will render as:
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+
 ### 2. Pragraph or text:
 - In Markdown, creating paragraphs or blocks of text is very straightforward. Simply writing text on separate lines will create paragraphs. Here are some key points to remember:
     - To create a new paragraph, just leave a blank line between blocks of text.
@@ -31,6 +38,14 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 
         This is the second paragraph. It contains an _italicized word_.
         ```
+        this will render as:
+        ## Introduction
+
+        This is the first paragraph. It's an introduction to **Markdown**.  
+        Here is a second line in the same paragraph.
+
+        This is the second paragraph. It contains an _italicized word_.
+
 
 
 
@@ -43,37 +58,60 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 **bold text**
 *italic text*
 ```
+this will render as:
 
-
-
+**bold text**
+*italic text*
 
 
 ### 4. Lists:
 
 - Unordered Lists: Use -, +, or * to create bullet points.
 
-```markdown
+    ```markdown
 
-- Item 1
-- Item 2
-```
+    - Item 1
+    - Item 2
+    ```
+    this will render as:
+
+    - Item 1
+    - Item 2
+    
 
 - Ordered Lists: Use numbers followed by a period.
 
-```markdown
+    ```markdown
 
-    1. First item
-    2. Second item
-```
+        1. First item
+        2. Second item
+    ```
+    this will render as:
+1. First item
+2. Second item
+    
 - sub list: just use tab frist then as per unordered or ordered lists.
     Exaple
     ```markdown
 
     1. First item
         1. Frist item
+            1. Frist item
+                1. Frist item
+                2. Second item
+            2. Second item
         2. Second item
-
-    ```
+    2. Second item
+        ```
+    this will render as:
+1. First item
+    1. Frist item
+        1. Frist item
+            1. Frist item
+            2. Second item
+        2. Second item
+    2. Second item
+2. Second item
 
 
 ### 5. Links:
@@ -84,6 +122,8 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 
     [OpenAI](https://www.openai.com)
 ```
+this will render as:
+[Opern AI](http://www.openai.com)
 
 ### 6. Images:
 
@@ -93,6 +133,9 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 
     ![Logo](https://www.example.com/logo.png)
 ```
+this will render as:
+![Logo](https://www.example.com/logo.png)
+
 
 ### 7. Blockquotes:
 
@@ -102,6 +145,8 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 
     > This is a blockquote.
 ```
+this will render as:
+> This is a blockquote.
 
 
 ### 8. Code:
@@ -110,6 +155,8 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
     ```markdown
     `code`
     ```
+    this will reder as:
+    `code`
 
 - For code blocks, use triple backticks:
     Exaple:
@@ -121,6 +168,10 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
     \``` 
         
     ```
+    ```python
+    def funtion():
+        return "Code block"
+    ```
 
 ### 9. Horizontal Rules:
 
@@ -129,6 +180,11 @@ Markdown is a lightweight markup language that's easy to learn and very useful f
 ```markdown
 ---
 ```
+
+this will render as:
+
+---
+
 ### 10. Tables
 
 - To create a table, use pipes (|) and three dashes (-). The pipes separate columns and the dashes create the header row.
@@ -141,6 +197,12 @@ Example:
 | Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
 | Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
 ```
+this will render as:
+ Header 1 | Header 2 | Header 3 |
+|---|---|---|
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+
 - You can also align text within columns by adding colons (:):
 Example:
 
@@ -151,6 +213,13 @@ Example:
 | Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
 | Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
 ```
+this will render as:
+
+| Left Align | Center Align | Right Align |
+|:-----------|:------------:|------------:|
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+
 
 ### 11. Checkboxes
 
@@ -161,10 +230,16 @@ To create checkboxes, use - [ ] for an unchecked box and - [x] for a checked box
 - [ ] Task 1
 - [x] Task 2
 - [ ] Task 3
-``` 
+```
+this will render as:
+
+- [ ] Task 1
+- [x] Task 2
+- [ ] Task 3
 
 
-#### Examples:
+
+## Examples text
 
 Here’s a sample Markdown document that uses these elements:
 
